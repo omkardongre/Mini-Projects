@@ -1,5 +1,6 @@
-#include<iostream>
+//Demonstration of internal working of Function  Overriding in Run Time Polymorphism
 
+#include<iostream>
 using namespace std;
 
 class Base
