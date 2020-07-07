@@ -1,3 +1,25 @@
+'''
+
+Python Automation Script for duplicate file removal
+
+This is simple python script for removal of duplcation files from any directory provided.
+
+The script uses MD5 for creating hashing.
+
+Hash values of files are same if files has exactly same data.
+
+Almost all files format are supported (except fifo )
+
+Modules- sys,os,hashlib
+
+Inputs - command line arguement for absolute/relative path
+
+Output - All duplicate files in a given directory are deleted.
+
+
+'''
+
+
 import sys
 import os
 import hashlib
