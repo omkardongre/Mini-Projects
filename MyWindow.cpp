@@ -50,8 +50,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 	ShowWindow(hwnd, iCmdShow);
 	UpdateWindow(hwnd);
 
-	//messagr loop
-
+	//message loop
 	while (GetMessage(&msg, NULL, 0, 0))
 	{
 
@@ -62,22 +61,22 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 	return (int)msg.wParam;
 
 }
-	//Defination of callback function
 
-	LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
+//Defination of callback function
+LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+
+	//code of message handlers
+	switch (iMsg)
 	{
-
-		//code of message handlers
-		switch (iMsg)
-		{
 		case WM_DESTROY:
 			PostQuitMessage(0);
 			break;
 
-		}
-
-		return DefWindowProc(hwnd, iMsg, wParam, lParam);
 	}
+
+	return DefWindowProc(hwnd, iMsg, wParam, lParam);
+}
 
 
 
