@@ -192,20 +192,6 @@ def main():
 		if schedule.run_pending():
 			print("omkar")
 		
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
 
 if __name__=="__main__":
 	main()
