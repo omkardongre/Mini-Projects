@@ -1,0 +1,15 @@
+	start 200 
+	mover areg,='5' 
+	movem areg,a 
+loop	mover areg,a 
+	mover creg,b 
+ 	add creg,='1' 
+	ltorg 
+next1   sub areg,='1' 
+	origin loop + 10  
+	mult creg,b  
+	stop  
+a ds 2 
+b dc '3' 
+next2	equ loop 
+end 
