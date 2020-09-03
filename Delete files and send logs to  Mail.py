@@ -10,7 +10,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-#function to create checksum
+#function to create checksum using MD5 algorithm
  
 def hashfile(path,blocksize=1024):
 	fd=open(path,'rb')
@@ -56,7 +56,7 @@ def duplicate_files(path):
 				
 	return dict1		
 			
-		
+# printing the path of duplicate files		
 def print_dup(dict1):
 	
 	f_list=list(filter(lambda x : len(x)>1 , dict1.values()))
@@ -70,7 +70,8 @@ def print_dup(dict1):
 
 		print('*'*80)				
 
-		
+
+#delete  duplicate files
 def delete_dup(dup_file):
 	
 	f_list=list(filter(lambda x : len(x)>1 , dup_file.values()))
