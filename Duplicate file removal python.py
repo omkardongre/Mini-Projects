@@ -63,6 +63,8 @@ def duplicate_files(path):
 	return dict1		
 	
 
+
+#to print duplicates path
 def print_dup(dict1):
 	
 	f_list=list(filter(lambda x : len(x)>1,dict1.values()))
@@ -76,9 +78,10 @@ def print_dup(dict1):
 
 						
 
-		
+# delete duplicates directory 	
 def delete_dup(dict1):
 	
+	#f_list stores names  of the path whose count is greater than 1 
 	f_list=list(filter(lambda x : len(x)>1 , dict1.values()))
 	count=0
 	for i in f_list:
