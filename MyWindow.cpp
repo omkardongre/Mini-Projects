@@ -33,7 +33,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 	//register above class
 	RegisterClassEx(&wndclass);
 
-	//create window
+	//create window function for creating the window based on ( mould=> wndclass filled above 12 parameters) internally (not visible )
 	hwnd = CreateWindow(szAppName,
 		TEXT("Window is mine"),  //title of window
 		WS_OVERLAPPEDWINDOW,
