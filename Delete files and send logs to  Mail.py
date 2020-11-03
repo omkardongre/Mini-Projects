@@ -154,7 +154,7 @@ def mailsender(fname,time):
 	
 	server=smtplib.SMTP_SSL('smtp.gmail.com',465)	
 	
-	server.login("omkardongre5@gmail.com","GooGle111598")
+	server.login("omkardongre5@gmail.com","*************")
 	text=msg.as_string()
 	
 	
